@@ -16,27 +16,22 @@
                         <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="1109_dawn-sea-beach_1170x2532" translatesAutoresizingMaskIntoConstraints="NO" id="2Ui-3U-SzX">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="3462_maldives-island-sunset_1170x2532" translatesAutoresizingMaskIntoConstraints="NO" id="2Ui-3U-SzX">
                                 <rect key="frame" x="0.0" y="-128" width="440" height="1162"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="1162" id="lk6-2O-oya"/>
-                                </constraints>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SignIn SignUp App" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V9O-fM-eMV">
-                                <rect key="frame" x="114.66666666666667" y="250" width="198.66666666666663" height="436"/>
+                                <rect key="frame" x="114.66666666666667" y="44" width="198.66666666666663" height="436"/>
                                 <fontDescription key="fontDescription" name="Zapfino" family="Zapfino" pointSize="43"/>
-                                <color key="textColor" red="0.01464512385" green="0.041499190030000001" blue="0.1079170331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="V9O-fM-eMV" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="1pZ-LP-qNH"/>
+                            <constraint firstItem="V9O-fM-eMV" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" constant="-206" id="1pZ-LP-qNH"/>
                             <constraint firstItem="V9O-fM-eMV" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Rkb-EE-Px6"/>
-                            <constraint firstItem="2Ui-3U-SzX" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" constant="-128" id="bkR-dA-AY7"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="2Ui-3U-SzX" secondAttribute="trailing" constant="-32" id="n3d-gi-feB"/>
-                            <constraint firstItem="2Ui-3U-SzX" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="xT4-xJ-JRl"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -46,7 +41,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="1109_dawn-sea-beach_1170x2532" width="1170" height="2532"/>
+        <image name="3462_maldives-island-sunset_1170x2532" width="1170" height="2532"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

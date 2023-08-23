@@ -15,6 +15,7 @@
 		399DB0612A95795300EA7481 /* SignInStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 399DB0602A95795300EA7481 /* SignInStoryboard.storyboard */; };
 		399DB0632A957D2600EA7481 /* SignUpStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 399DB0622A957D2600EA7481 /* SignUpStoryboard.storyboard */; };
 		399DB0672A95852900EA7481 /* SignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 399DB0662A95852900EA7481 /* SignInVC.swift */; };
+		39C809DF2A958FA0002BAECF /* CreateAccountVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39C809DE2A958FA0002BAECF /* CreateAccountVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		399DB0602A95795300EA7481 /* SignInStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SignInStoryboard.storyboard; sourceTree = "<group>"; };
 		399DB0622A957D2600EA7481 /* SignUpStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SignUpStoryboard.storyboard; sourceTree = "<group>"; };
 		399DB0662A95852900EA7481 /* SignInVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInVC.swift; sourceTree = "<group>"; };
+		39C809DE2A958FA0002BAECF /* CreateAccountVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +95,7 @@
 			isa = PBXGroup;
 			children = (
 				399DB0662A95852900EA7481 /* SignInVC.swift */,
+				39C809DE2A958FA0002BAECF /* CreateAccountVC.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -172,6 +175,7 @@
 			files = (
 				399DB04B2A956DBB00EA7481 /* AppDelegate.swift in Sources */,
 				399DB04D2A956DBB00EA7481 /* SceneDelegate.swift in Sources */,
+				39C809DF2A958FA0002BAECF /* CreateAccountVC.swift in Sources */,
 				399DB0672A95852900EA7481 /* SignInVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
