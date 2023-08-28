@@ -7,7 +7,7 @@
 
 import UIKit
 
-class CreateAccountVC: UIViewController {
+class CreateAccountVC: BaseViewController {
     /// email
     @IBOutlet weak var emailTF: UITextField!
     @IBOutlet weak var errorEmailLBL: UILabel!
@@ -49,15 +49,6 @@ class CreateAccountVC: UIViewController {
             let contentInsets = UIEdgeInsets(top: 0.0, left: 0.0, bottom: 0.0, right: 0.0)
             scrollView.contentInset = contentInsets
             scrollView.scrollIndicatorInsets = contentInsets
-        }
-    func hideKeyboardWhenTappedAround() {
-            let tap = UITapGestureRecognizer(target: self, action: #selector(dismissKeyboard))
-            tap.cancelsTouchesInView = false
-            view.addGestureRecognizer(tap)
-        }
-
-        @objc func dismissKeyboard() {
-            view.endEditing(true)
         }
 
     /*
