@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
-    <device id="retina6_7" orientation="portrait" appearance="light"/>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+    <device id="retina6_72" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -13,55 +14,55 @@
             <objects>
                 <viewController id="Y6W-OH-hqX" customClass="CreateAccountVC" customModule="MySignInSignUpApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
-                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                        <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="3456_maldives-sunset-landscape_1170x2532" translatesAutoresizingMaskIntoConstraints="NO" id="vCY-J4-cFi">
-                                <rect key="frame" x="-107" y="0.0" width="643" height="927"/>
+                                <rect key="frame" x="-107" y="0.0" width="650" height="946"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ha7-xz-CZr">
-                                <rect key="frame" x="0.0" y="44" width="428" height="848"/>
+                                <rect key="frame" x="0.0" y="59" width="430" height="839"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kVn-XK-ze2">
-                                        <rect key="frame" x="0.0" y="0.0" width="428" height="822"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="430" height="863.66666666666663"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A6q-yh-kDB">
-                                                <rect key="frame" x="271.66666666666669" y="25.000000000000007" width="131.33333333333331" height="98.666666666666686"/>
+                                                <rect key="frame" x="273.66666666666669" y="25.000000000000007" width="131.33333333333331" height="98.666666666666686"/>
                                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" title="Sign In">
                                                     <fontDescription key="titleFontDescription" name="Zapfino" family="Zapfino" pointSize="25"/>
                                                 </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="signInAction" destination="Y6W-OH-hqX" eventType="touchUpInside" id="zBe-nf-5vN"/>
+                                                </connections>
                                             </button>
-                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="lo2-aC-bqw">
-                                                <rect key="frame" x="25" y="150" width="378" height="622"/>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="33" translatesAutoresizingMaskIntoConstraints="NO" id="lo2-aC-bqw">
+                                                <rect key="frame" x="25" y="150" width="380" height="663.66666666666663"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Create an account" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5O3-KJ-iaM">
-                                                        <rect key="frame" x="0.0" y="0.0" width="378" height="81.333333333333329"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="380" height="81.333333333333329"/>
                                                         <fontDescription key="fontDescription" name="Zapfino" family="Zapfino" pointSize="24"/>
-                                                        <color key="textColor" red="0.01464512385" green="0.041499190030000001" blue="0.1079170331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="pCN-EL-vPu">
-                                                        <rect key="frame" x="0.0" y="81.333333333333314" width="378" height="99.666666666666686"/>
+                                                        <rect key="frame" x="0.0" y="114.33333333333331" width="380" height="57"/>
                                                         <subviews>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1.Enter your email" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SQ3-u6-Tw2">
-                                                                <rect key="frame" x="0.0" y="0.0" width="378" height="57.666666666666664"/>
-                                                                <fontDescription key="fontDescription" name="Zapfino" family="Zapfino" pointSize="17"/>
-                                                                <nil key="textColor"/>
-                                                                <nil key="highlightedColor"/>
-                                                            </label>
                                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="8gA-BO-4o2">
-                                                                <rect key="frame" x="0.0" y="65.666666666666686" width="378" height="34"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="380" height="57"/>
                                                                 <subviews>
                                                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Please enter your email" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XqA-WR-evY">
-                                                                        <rect key="frame" x="0.0" y="0.0" width="378" height="34"/>
-                                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                                        <rect key="frame" x="0.0" y="0.0" width="380" height="57"/>
+                                                                        <fontDescription key="fontDescription" name="Zapfino" family="Zapfino" pointSize="14"/>
                                                                         <textInputTraits key="textInputTraits"/>
+                                                                        <connections>
+                                                                            <action selector="emailTFAction:" destination="Y6W-OH-hqX" eventType="editingChanged" id="tpU-40-OVF"/>
+                                                                        </connections>
                                                                     </textField>
                                                                     <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Error: Invalid email" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DhS-8u-NjO">
-                                                                        <rect key="frame" x="0.0" y="0.0" width="378" height="0.0"/>
+                                                                        <rect key="frame" x="0.0" y="0.0" width="380" height="0.0"/>
                                                                         <fontDescription key="fontDescription" name="Zapfino" family="Zapfino" pointSize="15"/>
                                                                         <color key="textColor" systemColor="systemRedColor"/>
                                                                         <nil key="highlightedColor"/>
@@ -71,40 +72,31 @@
                                                         </subviews>
                                                     </stackView>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="3Hi-Zu-2Ic">
-                                                        <rect key="frame" x="0.0" y="181" width="378" height="91.666666666666686"/>
+                                                        <rect key="frame" x="0.0" y="204.33333333333331" width="380" height="57"/>
                                                         <subviews>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2.Enter your name(optional)" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lwx-Oj-dic">
-                                                                <rect key="frame" x="0.0" y="0.0" width="378" height="57.666666666666664"/>
-                                                                <fontDescription key="fontDescription" name="Zapfino" family="Zapfino" pointSize="17"/>
-                                                                <nil key="textColor"/>
-                                                                <nil key="highlightedColor"/>
-                                                            </label>
                                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Please enter your name" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dwP-4D-fYr">
-                                                                <rect key="frame" x="0.0" y="57.666666666666686" width="378" height="34"/>
-                                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="380" height="57"/>
+                                                                <fontDescription key="fontDescription" name="Zapfino" family="Zapfino" pointSize="14"/>
                                                                 <textInputTraits key="textInputTraits"/>
                                                             </textField>
                                                         </subviews>
                                                     </stackView>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="MlI-CN-DhW">
-                                                        <rect key="frame" x="0.0" y="272.66666666666674" width="378" height="349.33333333333326"/>
+                                                        <rect key="frame" x="0.0" y="294.33333333333337" width="380" height="369.33333333333337"/>
                                                         <subviews>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3.Create strong password" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pSP-Oe-iMC">
-                                                                <rect key="frame" x="0.0" y="0.0" width="378" height="57.666666666666664"/>
-                                                                <fontDescription key="fontDescription" name="Zapfino" family="Zapfino" pointSize="17"/>
-                                                                <nil key="textColor"/>
-                                                                <nil key="highlightedColor"/>
-                                                            </label>
                                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="gwE-9g-2IQ">
-                                                                <rect key="frame" x="0.0" y="57.666666666666686" width="378" height="34"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="380" height="56"/>
                                                                 <subviews>
                                                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Please enter your password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9Zi-qR-Fwj">
-                                                                        <rect key="frame" x="0.0" y="0.0" width="378" height="34"/>
-                                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                                        <textInputTraits key="textInputTraits"/>
+                                                                        <rect key="frame" x="0.0" y="0.0" width="380" height="56"/>
+                                                                        <fontDescription key="fontDescription" name="Zapfino" family="Zapfino" pointSize="14"/>
+                                                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                                                        <connections>
+                                                                            <action selector="passTFAction:" destination="Y6W-OH-hqX" eventType="editingChanged" id="qUq-re-TGW"/>
+                                                                        </connections>
                                                                     </textField>
                                                                     <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Error: weak password" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hV5-wo-1fh">
-                                                                        <rect key="frame" x="0.0" y="0.0" width="378" height="0.0"/>
+                                                                        <rect key="frame" x="0.0" y="0.0" width="380" height="0.0"/>
                                                                         <fontDescription key="fontDescription" name="Zapfino" family="Zapfino" pointSize="15"/>
                                                                         <color key="textColor" systemColor="systemRedColor"/>
                                                                         <nil key="highlightedColor"/>
@@ -112,22 +104,22 @@
                                                                 </subviews>
                                                             </stackView>
                                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="ad9-qV-eZ3">
-                                                                <rect key="frame" x="0.0" y="91.666666666666686" width="378" height="10"/>
+                                                                <rect key="frame" x="0.0" y="56.000000000000057" width="380" height="10"/>
                                                                 <subviews>
                                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yWu-zt-lSp">
-                                                                        <rect key="frame" x="0.0" y="0.0" width="90.666666666666671" height="10"/>
+                                                                        <rect key="frame" x="0.0" y="0.0" width="91.333333333333329" height="10"/>
                                                                         <color key="backgroundColor" systemColor="systemRedColor"/>
                                                                     </view>
                                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MHy-Ru-Pku">
-                                                                        <rect key="frame" x="95.666666666666686" y="0.0" width="91" height="10"/>
+                                                                        <rect key="frame" x="96.333333333333343" y="0.0" width="91.333333333333343" height="10"/>
                                                                         <color key="backgroundColor" systemColor="systemYellowColor"/>
                                                                     </view>
                                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="l83-ZB-Eww">
-                                                                        <rect key="frame" x="191.66666666666666" y="0.0" width="90.666666666666657" height="10"/>
+                                                                        <rect key="frame" x="192.66666666666666" y="0.0" width="90.999999999999972" height="10"/>
                                                                         <color key="backgroundColor" systemColor="systemBlueColor"/>
                                                                     </view>
                                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zkE-yr-KeF">
-                                                                        <rect key="frame" x="287.33333333333331" y="0.0" width="90.666666666666686" height="10"/>
+                                                                        <rect key="frame" x="288.66666666666669" y="0.0" width="91.333333333333314" height="10"/>
                                                                         <color key="backgroundColor" systemColor="systemGreenColor"/>
                                                                     </view>
                                                                 </subviews>
@@ -139,32 +131,38 @@
                                                                 </constraints>
                                                             </stackView>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your password must be a minimum of 8 characters and contain one capital letter, one lowercase letter and one number." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SQ4-Al-2AS">
-                                                                <rect key="frame" x="0.0" y="101.66666666666669" width="378" height="142"/>
+                                                                <rect key="frame" x="0.0" y="66.000000000000057" width="380" height="142"/>
                                                                 <fontDescription key="fontDescription" name="Zapfino" family="Zapfino" pointSize="14"/>
                                                                 <color key="textColor" red="0.99989169840000003" green="1" blue="0.99988096950000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="aIr-Wx-y2Q">
-                                                                <rect key="frame" x="0.0" y="243.66666666666666" width="378" height="105.66666666666666"/>
+                                                                <rect key="frame" x="0.0" y="208.00000000000006" width="380" height="161.33333333333331"/>
                                                                 <subviews>
                                                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Please repeat your password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kCX-62-itp">
-                                                                        <rect key="frame" x="0.0" y="0.0" width="378" height="34"/>
-                                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                                        <textInputTraits key="textInputTraits"/>
+                                                                        <rect key="frame" x="0.0" y="0.0" width="380" height="56"/>
+                                                                        <fontDescription key="fontDescription" name="Zapfino" family="Zapfino" pointSize="14"/>
+                                                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                                                        <connections>
+                                                                            <action selector="confPassTFAction:" destination="Y6W-OH-hqX" eventType="editingChanged" id="kgp-HS-er4"/>
+                                                                        </connections>
                                                                     </textField>
                                                                     <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Error: passwords don't match" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BK3-J3-WwY">
-                                                                        <rect key="frame" x="0.0" y="34" width="378" height="0.0"/>
+                                                                        <rect key="frame" x="0.0" y="56" width="380" height="0.0"/>
                                                                         <fontDescription key="fontDescription" name="Zapfino" family="Zapfino" pointSize="15"/>
                                                                         <color key="textColor" systemColor="systemRedColor"/>
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
-                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wiv-Va-xt2">
-                                                                        <rect key="frame" x="0.0" y="34.000000000000007" width="378" height="71.666666666666686"/>
+                                                                    <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wiv-Va-xt2">
+                                                                        <rect key="frame" x="0.0" y="55.999999999999993" width="380" height="105.33333333333331"/>
                                                                         <color key="tintColor" red="0.01464512385" green="0.041499190030000001" blue="0.1079170331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                         <state key="normal" title="Button"/>
                                                                         <buttonConfiguration key="configuration" style="plain" title="Continue">
-                                                                            <fontDescription key="titleFontDescription" name="Zapfino" family="Zapfino" pointSize="17"/>
+                                                                            <fontDescription key="titleFontDescription" name="Zapfino" family="Zapfino" pointSize="27"/>
                                                                         </buttonConfiguration>
+                                                                        <connections>
+                                                                            <action selector="continueAction" destination="Y6W-OH-hqX" eventType="touchUpInside" id="zFe-dc-B70"/>
+                                                                        </connections>
                                                                     </button>
                                                                 </subviews>
                                                             </stackView>
@@ -172,6 +170,11 @@
                                                     </stackView>
                                                 </subviews>
                                             </stackView>
+                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Jiu-8H-y9a">
+                                                <rect key="frame" x="95" y="381" width="240" height="1"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                            </view>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
@@ -218,14 +221,144 @@
                         <outletCollection property="strongPassIndicatorsViews" destination="MHy-Ru-Pku" collectionClass="NSMutableArray" id="ly0-Mk-Osf"/>
                         <outletCollection property="strongPassIndicatorsViews" destination="l83-ZB-Eww" collectionClass="NSMutableArray" id="erx-ZL-JOZ"/>
                         <outletCollection property="strongPassIndicatorsViews" destination="zkE-yr-KeF" collectionClass="NSMutableArray" id="Ktb-mH-bYJ"/>
+                        <segue destination="ogM-I8-lf3" kind="show" identifier="goToVerificationScreen" id="Yr2-FL-mSR"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="29.439252336448597" y="71.922246220302384"/>
+            <point key="canvasLocation" x="48.837209302325583" y="70.815450643776828"/>
+        </scene>
+        <!--VerificationsVC-->
+        <scene sceneID="Ir5-Mb-G2p">
+            <objects>
+                <viewController id="ogM-I8-lf3" customClass="VerificationsVC" customModule="MySignInSignUpApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="knd-kV-IYT">
+                        <rect key="frame" x="0.0" y="0.0" width="430" height="922"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="3452_maldives-sunset-swimming-pool_1170x2532" translatesAutoresizingMaskIntoConstraints="NO" id="qhK-LF-PIT">
+                                <rect key="frame" x="-71" y="-24" width="572" height="1024"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="26" translatesAutoresizingMaskIntoConstraints="NO" id="PBZ-xZ-X1j">
+                                <rect key="frame" x="30" y="74" width="370" height="400"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please enter secret code from your email" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CpB-QH-vG4">
+                                        <rect key="frame" x="0.0" y="0.0" width="370" height="209.66666666666666"/>
+                                        <fontDescription key="fontDescription" name="Zapfino" family="Zapfino" pointSize="31"/>
+                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m5U-d2-dXJ">
+                                        <rect key="frame" x="0.0" y="235.66666666666666" width="370" height="57.666666666666657"/>
+                                        <fontDescription key="fontDescription" name="Zapfino" family="Zapfino" pointSize="17"/>
+                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter secret code" textAlignment="center" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="4qn-mR-gKV">
+                                        <rect key="frame" x="0.0" y="319.33333333333331" width="370" height="80.666666666666686"/>
+                                        <fontDescription key="fontDescription" name="Zapfino" family="Zapfino" pointSize="21"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                        <connections>
+                                            <action selector="codeTFAction:" destination="ogM-I8-lf3" eventType="editingDidEnd" id="Zf4-Sx-5Ex"/>
+                                        </connections>
+                                    </textField>
+                                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Error: Invalid email" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PtT-QY-pyz">
+                                        <rect key="frame" x="0.0" y="400" width="370" height="0.0"/>
+                                        <fontDescription key="fontDescription" name="Zapfino" family="Zapfino" pointSize="19"/>
+                                        <color key="textColor" systemColor="systemRedColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="qR0-jb-x1M"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="PBZ-xZ-X1j" firstAttribute="centerY" secondItem="qR0-jb-x1M" secondAttribute="centerY" constant="-187" id="3eZ-Ts-oIL"/>
+                            <constraint firstItem="qR0-jb-x1M" firstAttribute="trailing" secondItem="PBZ-xZ-X1j" secondAttribute="trailing" constant="30" id="S97-en-i1s"/>
+                            <constraint firstItem="PBZ-xZ-X1j" firstAttribute="centerX" secondItem="qR0-jb-x1M" secondAttribute="centerX" id="TPZ-2Z-yCz"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="6Je-RD-zR4"/>
+                    <connections>
+                        <outlet property="centerYConstraint" destination="3eZ-Ts-oIL" id="GiP-bU-8hI"/>
+                        <outlet property="codeTF" destination="4qn-mR-gKV" id="BEA-vq-nn3"/>
+                        <outlet property="errorCodeLbl" destination="PtT-QY-pyz" id="OGu-5y-Knl"/>
+                        <outlet property="infoLbl" destination="m5U-d2-dXJ" id="Gdg-Ob-yvr"/>
+                        <segue destination="YNF-xx-tTV" kind="show" identifier="goToWelcomeScreen" id="Q4P-vX-ZjE"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ezZ-bX-ESE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1082.7906976744187" y="70.815450643776828"/>
+        </scene>
+        <!--WelcomeVC-->
+        <scene sceneID="8Pr-si-QAF">
+            <objects>
+                <viewController id="YNF-xx-tTV" customClass="WelcomeVC" customModule="MySignInSignUpApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="P0P-TU-Tf4">
+                        <rect key="frame" x="0.0" y="0.0" width="430" height="922"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="3451_maldives-resort-birds-eye-view_1170x2532" translatesAutoresizingMaskIntoConstraints="NO" id="m1d-Ya-MKj">
+                                <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DIJ-Dq-aiK">
+                                <rect key="frame" x="96.666666666666686" y="689.66666666666663" width="237" height="232.33333333333337"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Continue">
+                                    <fontDescription key="titleFontDescription" name="Zapfino" family="Zapfino" pointSize="40"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="continueAction" destination="YNF-xx-tTV" eventType="touchUpInside" id="YQr-1g-zgi"/>
+                                </connections>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="9Wj-fy-Ang">
+                                <rect key="frame" x="25" y="98.999999999999972" width="380" height="351.33333333333326"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qhk-O4-iOJ">
+                                        <rect key="frame" x="0.0" y="0.0" width="380" height="199.33333333333334"/>
+                                        <fontDescription key="fontDescription" name="Zapfino" family="Zapfino" pointSize="59"/>
+                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yrY-Qq-2zC">
+                                        <rect key="frame" x="0.0" y="199.33333333333331" width="380" height="152"/>
+                                        <fontDescription key="fontDescription" name="Zapfino" family="Zapfino" pointSize="45"/>
+                                        <color key="textColor" systemColor="systemGroupedBackgroundColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Ess-z9-B2O"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="9Wj-fy-Ang" firstAttribute="top" secondItem="Ess-z9-B2O" secondAttribute="top" constant="99" id="0wm-FL-67i"/>
+                            <constraint firstItem="9Wj-fy-Ang" firstAttribute="leading" secondItem="Ess-z9-B2O" secondAttribute="leading" constant="25" id="GBN-kS-Si8"/>
+                            <constraint firstItem="DIJ-Dq-aiK" firstAttribute="top" secondItem="Ess-z9-B2O" secondAttribute="top" constant="689.66666666666663" id="OGy-mQ-N5Y"/>
+                            <constraint firstItem="Ess-z9-B2O" firstAttribute="trailing" secondItem="9Wj-fy-Ang" secondAttribute="trailing" constant="25" id="SVv-XJ-m7d"/>
+                            <constraint firstItem="DIJ-Dq-aiK" firstAttribute="centerX" secondItem="Ess-z9-B2O" secondAttribute="centerX" id="dK0-Zq-zMy"/>
+                            <constraint firstItem="DIJ-Dq-aiK" firstAttribute="bottom" secondItem="Ess-z9-B2O" secondAttribute="bottom" id="oFc-QO-HgS"/>
+                            <constraint firstItem="9Wj-fy-Ang" firstAttribute="centerX" secondItem="Ess-z9-B2O" secondAttribute="centerX" id="vQb-s7-Kwx"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="XfB-fg-iam"/>
+                    <connections>
+                        <outlet property="infoLbl" destination="yrY-Qq-2zC" id="ubR-pq-GlG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oRt-NB-Crh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1848.8372093023256" y="70.815450643776828"/>
         </scene>
     </scenes>
     <resources>
+        <image name="3451_maldives-resort-birds-eye-view_1170x2532" width="1170" height="2532"/>
+        <image name="3452_maldives-sunset-swimming-pool_1170x2532" width="1170" height="2532"/>
         <image name="3456_maldives-sunset-landscape_1170x2532" width="1170" height="2532"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -235,6 +368,9 @@
         </systemColor>
         <systemColor name="systemGreenColor">
             <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGroupedBackgroundColor">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemRedColor">
             <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
