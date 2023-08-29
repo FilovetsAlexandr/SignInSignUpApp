@@ -10,13 +10,17 @@
 		399DB04B2A956DBB00EA7481 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 399DB04A2A956DBB00EA7481 /* AppDelegate.swift */; };
 		399DB04D2A956DBB00EA7481 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 399DB04C2A956DBB00EA7481 /* SceneDelegate.swift */; };
 		399DB0522A956DBB00EA7481 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 399DB0502A956DBB00EA7481 /* MainStoryboard.storyboard */; };
-		399DB0542A956DBC00EA7481 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 399DB0532A956DBC00EA7481 /* Assets.xcassets */; };
 		399DB0572A956DBC00EA7481 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 399DB0552A956DBC00EA7481 /* LaunchScreen.storyboard */; };
 		399DB0612A95795300EA7481 /* SignInStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 399DB0602A95795300EA7481 /* SignInStoryboard.storyboard */; };
 		399DB0632A957D2600EA7481 /* SignUpStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 399DB0622A957D2600EA7481 /* SignUpStoryboard.storyboard */; };
 		399DB0672A95852900EA7481 /* SignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 399DB0662A95852900EA7481 /* SignInVC.swift */; };
 		39C809DF2A958FA0002BAECF /* CreateAccountVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39C809DE2A958FA0002BAECF /* CreateAccountVC.swift */; };
+		F49E27BC2A9D7D710071827D /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F49E27BB2A9D7D710071827D /* UserModel.swift */; };
+		F49FA8D72A9D820600F9705F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F49FA8D62A9D820600F9705F /* Assets.xcassets */; };
+		F49FA8D92A9D885900F9705F /* VerificationsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F49FA8D82A9D885900F9705F /* VerificationsVC.swift */; };
+		F4C69B482A9E0D5C0087D576 /* WelcomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C69B472A9E0D5C0087D576 /* WelcomeVC.swift */; };
 		F4CEB3BE2A9D58A900865E01 /* UIViewControllerExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4CEB3BD2A9D58A900865E01 /* UIViewControllerExt.swift */; };
+		F4CEB3C12A9D614200865E01 /* VerificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4CEB3C02A9D614200865E01 /* VerificationService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,14 +28,18 @@
 		399DB04A2A956DBB00EA7481 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		399DB04C2A956DBB00EA7481 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		399DB0512A956DBB00EA7481 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
-		399DB0532A956DBC00EA7481 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		399DB0562A956DBC00EA7481 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		399DB0582A956DBC00EA7481 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		399DB0602A95795300EA7481 /* SignInStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SignInStoryboard.storyboard; sourceTree = "<group>"; };
 		399DB0622A957D2600EA7481 /* SignUpStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SignUpStoryboard.storyboard; sourceTree = "<group>"; };
 		399DB0662A95852900EA7481 /* SignInVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInVC.swift; sourceTree = "<group>"; };
 		39C809DE2A958FA0002BAECF /* CreateAccountVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountVC.swift; sourceTree = "<group>"; };
+		F49E27BB2A9D7D710071827D /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		F49FA8D62A9D820600F9705F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F49FA8D82A9D885900F9705F /* VerificationsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerificationsVC.swift; sourceTree = "<group>"; };
+		F4C69B472A9E0D5C0087D576 /* WelcomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeVC.swift; sourceTree = "<group>"; };
 		F4CEB3BD2A9D58A900865E01 /* UIViewControllerExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExt.swift; sourceTree = "<group>"; };
+		F4CEB3C02A9D614200865E01 /* VerificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerificationService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +72,8 @@
 		399DB0492A956DBB00EA7481 /* MySignInSignUpApp */ = {
 			isa = PBXGroup;
 			children = (
+				F49E27BA2A9D7D500071827D /* Models */,
+				F4CEB3BF2A9D610800865E01 /* Services */,
 				F4CEB3BC2A9D586300865E01 /* Extensions */,
 				399DB05E2A956E8200EA7481 /* AppDelegate */,
 				399DB0652A9584C400EA7481 /* Controllers */,
@@ -89,7 +99,7 @@
 				399DB0602A95795300EA7481 /* SignInStoryboard.storyboard */,
 				399DB0622A957D2600EA7481 /* SignUpStoryboard.storyboard */,
 				399DB0502A956DBB00EA7481 /* MainStoryboard.storyboard */,
-				399DB0532A956DBC00EA7481 /* Assets.xcassets */,
+				F49FA8D62A9D820600F9705F /* Assets.xcassets */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -99,8 +109,18 @@
 			children = (
 				399DB0662A95852900EA7481 /* SignInVC.swift */,
 				39C809DE2A958FA0002BAECF /* CreateAccountVC.swift */,
+				F49FA8D82A9D885900F9705F /* VerificationsVC.swift */,
+				F4C69B472A9E0D5C0087D576 /* WelcomeVC.swift */,
 			);
 			path = Controllers;
+			sourceTree = "<group>";
+		};
+		F49E27BA2A9D7D500071827D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F49E27BB2A9D7D710071827D /* UserModel.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		F4CEB3BC2A9D586300865E01 /* Extensions */ = {
@@ -109,6 +129,14 @@
 				F4CEB3BD2A9D58A900865E01 /* UIViewControllerExt.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		F4CEB3BF2A9D610800865E01 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				F4CEB3C02A9D614200865E01 /* VerificationService.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -171,9 +199,9 @@
 			files = (
 				399DB0632A957D2600EA7481 /* SignUpStoryboard.storyboard in Resources */,
 				399DB0572A956DBC00EA7481 /* LaunchScreen.storyboard in Resources */,
-				399DB0542A956DBC00EA7481 /* Assets.xcassets in Resources */,
 				399DB0522A956DBB00EA7481 /* MainStoryboard.storyboard in Resources */,
 				399DB0612A95795300EA7481 /* SignInStoryboard.storyboard in Resources */,
+				F49FA8D72A9D820600F9705F /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -185,10 +213,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				F4CEB3BE2A9D58A900865E01 /* UIViewControllerExt.swift in Sources */,
+				F49E27BC2A9D7D710071827D /* UserModel.swift in Sources */,
 				399DB04B2A956DBB00EA7481 /* AppDelegate.swift in Sources */,
+				F4CEB3C12A9D614200865E01 /* VerificationService.swift in Sources */,
 				399DB04D2A956DBB00EA7481 /* SceneDelegate.swift in Sources */,
 				39C809DF2A958FA0002BAECF /* CreateAccountVC.swift in Sources */,
+				F4C69B482A9E0D5C0087D576 /* WelcomeVC.swift in Sources */,
 				399DB0672A95852900EA7481 /* SignInVC.swift in Sources */,
+				F49FA8D92A9D885900F9705F /* VerificationsVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
