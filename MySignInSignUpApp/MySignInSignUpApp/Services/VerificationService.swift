@@ -15,8 +15,7 @@ enum PasswordStrength: Int {
     case strong
 }
 
-class VerificationService {
-    
+enum VerificationService {
     static let weakRegex = "^(?=.*[A-Za-z])(?=.*\\d)[A-Za-z\\d]{8,}$"
     static let notVeryWeakRegex = "^(?=.*[a-z])(?=.*[A-Z])(?=.*\\d)[a-zA-Z\\d]{8,}$"
     static let notVeryStrongRegex = "^(?=.*[A-Za-z])(?=.*\\d)(?=.*[$@$!%*#?&])[A-Za-z\\d$@$!%*#?&]{8,}$"
@@ -24,14 +23,14 @@ class VerificationService {
 
     static func isValidPassword(pass: String) -> PasswordStrength {
         if NSPredicate(format: "SELF MATCHES %@", strongRegex).evaluate(with: pass) {
-                    return .strong
-                } else if NSPredicate(format: "SELF MATCHES %@", notVeryStrongRegex).evaluate(with: pass) {
-                    return .notVeryStrong
-                } else if NSPredicate(format: "SELF MATCHES %@", notVeryWeakRegex).evaluate(with: pass) {
-                    return .notVeryWeak
-                } else if NSPredicate(format: "SELF MATCHES %@", weakRegex).evaluate(with: pass) {
-                    return .weak
-                } else { return .veryWeak }
+            return .strong
+        } else if NSPredicate(format: "SELF MATCHES %@", notVeryStrongRegex).evaluate(with: pass) {
+            return .notVeryStrong
+        } else if NSPredicate(format: "SELF MATCHES %@", notVeryWeakRegex).evaluate(with: pass) {
+            return .notVeryWeak
+        } else if NSPredicate(format: "SELF MATCHES %@", weakRegex).evaluate(with: pass) {
+            return .weak
+        } else { return .veryWeak }
     }
 
     static func isValidEmail(email: String) -> Bool {
@@ -41,5 +40,4 @@ class VerificationService {
     }
 
     static func isPassConfirm(pass1: String, pass2: String) -> Bool { pass1 == pass2 }
-    
 }

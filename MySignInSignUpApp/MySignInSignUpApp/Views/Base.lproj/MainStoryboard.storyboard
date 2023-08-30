@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Wlf-C5-hVz">
-    <device id="retina6_7" orientation="portrait" appearance="light"/>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Wlf-C5-hVz">
+    <device id="retina6_72" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -11,26 +12,285 @@
         <!--Settings-->
         <scene sceneID="Pyc-HX-RsI">
             <objects>
-                <viewController id="AM1-Ya-XUr" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SettingsVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="AM1-Ya-XUr" customClass="SettingsVC" customModule="MySignInSignUpApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5mj-uM-Y4Q">
-                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                        <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="3446_maldives-underwater-reef_1170x2532" translatesAutoresizingMaskIntoConstraints="NO" id="nRK-K6-1sH">
+                                <rect key="frame" x="-121" y="-85" width="692" height="1143"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="79" translatesAutoresizingMaskIntoConstraints="NO" id="Ea8-Aq-SUX">
+                                <rect key="frame" x="32" y="228.99999999999997" width="366" height="450.33333333333326"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rui-pm-gku">
+                                        <rect key="frame" x="0.0" y="0.0" width="366" height="81.666666666666671"/>
+                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Change User Account Data">
+                                            <fontDescription key="titleFontDescription" name="Zapfino" family="Zapfino" pointSize="20"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <segue destination="Ws2-w4-F10" kind="show" id="nRF-YM-cD8"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1aG-ia-aRW">
+                                        <rect key="frame" x="0.0" y="160.66666666666669" width="366" height="105.33333333333331"/>
+                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Delete Account">
+                                            <fontDescription key="titleFontDescription" name="Zapfino" family="Zapfino" pointSize="27"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="deleteAccountAction" destination="AM1-Ya-XUr" eventType="touchUpInside" id="0ZR-Pa-luy"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EvT-ZH-LU2">
+                                        <rect key="frame" x="0.0" y="345" width="366" height="105.33333333333331"/>
+                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Log Out">
+                                            <fontDescription key="titleFontDescription" name="Zapfino" family="Zapfino" pointSize="27"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="logOutAction" destination="AM1-Ya-XUr" eventType="touchUpInside" id="N7C-8h-txP"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="FoR-Eo-dcA"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Ea8-Aq-SUX" firstAttribute="centerY" secondItem="FoR-Eo-dcA" secondAttribute="centerY" id="RAK-Ez-RGr"/>
+                            <constraint firstItem="Ea8-Aq-SUX" firstAttribute="centerX" secondItem="FoR-Eo-dcA" secondAttribute="centerX" id="lRC-L4-TAU"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Settings" image="gear" catalog="system" id="Buu-Pw-8zd"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rZF-xF-u6s" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="458" y="90"/>
+            <point key="canvasLocation" x="72.89719626168224" y="95.896328293736502"/>
+        </scene>
+        <!--Main SettingsVC-->
+        <scene sceneID="2oz-6k-RM7">
+            <objects>
+                <viewController id="Ws2-w4-F10" customClass="MainSettingsVC" customModule="MySignInSignUpApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="KAY-Nk-8PK">
+                        <rect key="frame" x="0.0" y="0.0" width="430" height="922"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="3453_underwater-ocean-maldives_1170x2532" translatesAutoresizingMaskIntoConstraints="NO" id="cgE-X6-Ed0">
+                                <rect key="frame" x="0.0" y="-18" width="430" height="959"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kiH-dN-ajj">
+                                <rect key="frame" x="0.0" y="0.0" width="430" height="922"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GwY-DB-6xE">
+                                        <rect key="frame" x="0.0" y="0.0" width="430" height="1000"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="33" translatesAutoresizingMaskIntoConstraints="NO" id="D6e-RU-cP5">
+                                                <rect key="frame" x="25" y="80" width="380" height="663.66666666666663"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Change user account data" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fs0-HY-26a">
+                                                        <rect key="frame" x="0.0" y="0.0" width="380" height="81.333333333333329"/>
+                                                        <fontDescription key="fontDescription" name="Zapfino" family="Zapfino" pointSize="24"/>
+                                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="jiL-Jg-Xwt">
+                                                        <rect key="frame" x="0.0" y="114.33333333333334" width="380" height="57"/>
+                                                        <subviews>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="SkC-Yj-ZW1">
+                                                                <rect key="frame" x="0.0" y="0.0" width="380" height="57"/>
+                                                                <subviews>
+                                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Please enter your new email" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZW2-ZJ-wGS">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="380" height="57"/>
+                                                                        <fontDescription key="fontDescription" name="Zapfino" family="Zapfino" pointSize="14"/>
+                                                                        <textInputTraits key="textInputTraits"/>
+                                                                        <connections>
+                                                                            <action selector="emailTFAction:" destination="Ws2-w4-F10" eventType="editingDidEnd" id="WnW-Ae-5IS"/>
+                                                                        </connections>
+                                                                    </textField>
+                                                                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Error: Invalid email" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J2a-RD-uEB">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="380" height="0.0"/>
+                                                                        <fontDescription key="fontDescription" name="Zapfino" family="Zapfino" pointSize="15"/>
+                                                                        <color key="textColor" systemColor="systemRedColor"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                </subviews>
+                                                            </stackView>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="2il-aO-987">
+                                                        <rect key="frame" x="0.0" y="204.33333333333331" width="380" height="57"/>
+                                                        <subviews>
+                                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Please enter your new name" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="UJg-O3-tTq">
+                                                                <rect key="frame" x="0.0" y="0.0" width="380" height="57"/>
+                                                                <fontDescription key="fontDescription" name="Zapfino" family="Zapfino" pointSize="14"/>
+                                                                <textInputTraits key="textInputTraits"/>
+                                                            </textField>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="iYi-gK-SWQ">
+                                                        <rect key="frame" x="0.0" y="294.33333333333337" width="380" height="369.33333333333337"/>
+                                                        <subviews>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="5aR-Y9-bzN">
+                                                                <rect key="frame" x="0.0" y="0.0" width="380" height="56"/>
+                                                                <subviews>
+                                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Please enter your new password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3nL-sJ-AZk">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="380" height="56"/>
+                                                                        <fontDescription key="fontDescription" name="Zapfino" family="Zapfino" pointSize="14"/>
+                                                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                                                        <connections>
+                                                                            <action selector="passTFAction:" destination="Ws2-w4-F10" eventType="editingDidEnd" id="85D-DB-vee"/>
+                                                                        </connections>
+                                                                    </textField>
+                                                                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Error: weak password" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qMJ-H1-cNm">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="380" height="0.0"/>
+                                                                        <fontDescription key="fontDescription" name="Zapfino" family="Zapfino" pointSize="15"/>
+                                                                        <color key="textColor" systemColor="systemRedColor"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                </subviews>
+                                                                <constraints>
+                                                                    <constraint firstItem="3nL-sJ-AZk" firstAttribute="top" secondItem="qMJ-H1-cNm" secondAttribute="top" id="TUp-lR-zGa"/>
+                                                                </constraints>
+                                                            </stackView>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="UGh-I3-XS3">
+                                                                <rect key="frame" x="0.0" y="56" width="380" height="10"/>
+                                                                <subviews>
+                                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="p17-mL-PNb">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="91.333333333333329" height="10"/>
+                                                                        <color key="backgroundColor" systemColor="systemRedColor"/>
+                                                                    </view>
+                                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AC9-PZ-kHT">
+                                                                        <rect key="frame" x="96.333333333333343" y="0.0" width="91.333333333333343" height="10"/>
+                                                                        <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                                                    </view>
+                                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rse-3n-aah">
+                                                                        <rect key="frame" x="192.66666666666666" y="0.0" width="90.999999999999972" height="10"/>
+                                                                        <color key="backgroundColor" systemColor="systemBlueColor"/>
+                                                                    </view>
+                                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RIp-GH-Sjt">
+                                                                        <rect key="frame" x="288.66666666666669" y="0.0" width="91.333333333333314" height="10"/>
+                                                                        <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                                                    </view>
+                                                                </subviews>
+                                                                <constraints>
+                                                                    <constraint firstItem="rse-3n-aah" firstAttribute="width" secondItem="RIp-GH-Sjt" secondAttribute="width" id="K5R-Uu-ijK"/>
+                                                                    <constraint firstItem="AC9-PZ-kHT" firstAttribute="width" secondItem="rse-3n-aah" secondAttribute="width" id="UXD-fL-5mQ"/>
+                                                                    <constraint firstItem="p17-mL-PNb" firstAttribute="width" secondItem="AC9-PZ-kHT" secondAttribute="width" id="dp3-bY-96y"/>
+                                                                    <constraint firstAttribute="height" constant="10" id="hvP-DM-B1a"/>
+                                                                </constraints>
+                                                            </stackView>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your password must be a minimum of 8 characters and contain one capital letter, one lowercase letter and one number." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U3W-rc-gq6">
+                                                                <rect key="frame" x="0.0" y="66" width="380" height="142"/>
+                                                                <fontDescription key="fontDescription" name="Zapfino" family="Zapfino" pointSize="14"/>
+                                                                <color key="textColor" red="0.99989169840000003" green="1" blue="0.99988096950000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="UwI-JE-a1T">
+                                                                <rect key="frame" x="0.0" y="208.00000000000006" width="380" height="161.33333333333331"/>
+                                                                <subviews>
+                                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Please repeat your new password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1jz-9y-yII">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="380" height="56"/>
+                                                                        <fontDescription key="fontDescription" name="Zapfino" family="Zapfino" pointSize="14"/>
+                                                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                                                        <connections>
+                                                                            <action selector="confPassTFAction:" destination="Ws2-w4-F10" eventType="editingDidEnd" id="pYL-7m-pVx"/>
+                                                                        </connections>
+                                                                    </textField>
+                                                                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Error: passwords don't match" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zS2-yp-H8T">
+                                                                        <rect key="frame" x="0.0" y="56" width="380" height="0.0"/>
+                                                                        <fontDescription key="fontDescription" name="Zapfino" family="Zapfino" pointSize="15"/>
+                                                                        <color key="textColor" systemColor="systemRedColor"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                    <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xbQ-KV-wpX">
+                                                                        <rect key="frame" x="0.0" y="55.999999999999993" width="380" height="105.33333333333331"/>
+                                                                        <color key="tintColor" red="0.01464512385" green="0.041499190030000001" blue="0.1079170331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                        <state key="normal" title="Button"/>
+                                                                        <buttonConfiguration key="configuration" style="plain" title="Continue">
+                                                                            <fontDescription key="titleFontDescription" name="Zapfino" family="Zapfino" pointSize="27"/>
+                                                                        </buttonConfiguration>
+                                                                        <connections>
+                                                                            <action selector="continueAction" destination="Ws2-w4-F10" eventType="touchUpInside" id="v89-Ic-RHp"/>
+                                                                        </connections>
+                                                                    </button>
+                                                                </subviews>
+                                                            </stackView>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="D6e-RU-cP5" firstAttribute="leading" secondItem="GwY-DB-6xE" secondAttribute="leading" constant="25" id="57q-hC-G8k"/>
+                                            <constraint firstAttribute="height" constant="1000" id="9ah-Rh-VTa"/>
+                                            <constraint firstAttribute="trailing" secondItem="D6e-RU-cP5" secondAttribute="trailing" constant="25" id="Fkh-6W-lJV"/>
+                                            <constraint firstItem="D6e-RU-cP5" firstAttribute="top" secondItem="GwY-DB-6xE" secondAttribute="top" constant="80" id="YDq-tp-ibv"/>
+                                            <constraint firstItem="D6e-RU-cP5" firstAttribute="centerX" secondItem="GwY-DB-6xE" secondAttribute="centerX" id="gnD-KZ-IlI"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="GwY-DB-6xE" firstAttribute="leading" secondItem="kiH-dN-ajj" secondAttribute="leading" id="IdM-5r-LSe"/>
+                                    <constraint firstAttribute="bottom" secondItem="GwY-DB-6xE" secondAttribute="bottom" id="fEb-1G-0u0"/>
+                                    <constraint firstItem="GwY-DB-6xE" firstAttribute="top" secondItem="kiH-dN-ajj" secondAttribute="top" id="iPs-xJ-n5i"/>
+                                    <constraint firstAttribute="trailing" secondItem="GwY-DB-6xE" secondAttribute="trailing" id="qHy-0W-cjA"/>
+                                </constraints>
+                                <viewLayoutGuide key="contentLayoutGuide" id="uk7-sQ-gj5"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="ytm-48-eJN"/>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Kwj-rs-286"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Kwj-rs-286" firstAttribute="bottom" secondItem="kiH-dN-ajj" secondAttribute="bottom" id="8fY-n1-cTn"/>
+                            <constraint firstItem="kiH-dN-ajj" firstAttribute="leading" secondItem="Kwj-rs-286" secondAttribute="leading" id="9rK-w5-2ra"/>
+                            <constraint firstItem="kiH-dN-ajj" firstAttribute="top" secondItem="Kwj-rs-286" secondAttribute="top" id="FO7-Sp-Ua4"/>
+                            <constraint firstItem="Kwj-rs-286" firstAttribute="trailing" secondItem="kiH-dN-ajj" secondAttribute="trailing" id="SVe-ge-mfb"/>
+                            <constraint firstItem="GwY-DB-6xE" firstAttribute="width" secondItem="KAY-Nk-8PK" secondAttribute="width" id="bOs-ax-man"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="E9N-DM-EUw"/>
+                    <connections>
+                        <outlet property="confPassTF" destination="1jz-9y-yII" id="Oe7-Dm-IC4"/>
+                        <outlet property="continueBtn" destination="xbQ-KV-wpX" id="UnO-C7-AtT"/>
+                        <outlet property="emailTF" destination="ZW2-ZJ-wGS" id="wxK-ec-R78"/>
+                        <outlet property="errorConfPassLbl" destination="zS2-yp-H8T" id="he3-Ia-hOZ"/>
+                        <outlet property="errorEmailLBL" destination="J2a-RD-uEB" id="PI9-Z3-W8h"/>
+                        <outlet property="errorPassLbl" destination="qMJ-H1-cNm" id="3WF-s3-Ttj"/>
+                        <outlet property="nameTF" destination="UJg-O3-tTq" id="6KB-pT-XKk"/>
+                        <outlet property="passwordTF" destination="3nL-sJ-AZk" id="5cv-72-GCe"/>
+                        <outlet property="scrollView" destination="kiH-dN-ajj" id="BCB-zh-6tk"/>
+                        <outletCollection property="strongPassIndicatorsViews" destination="p17-mL-PNb" collectionClass="NSMutableArray" id="oS9-CF-beq"/>
+                        <outletCollection property="strongPassIndicatorsViews" destination="AC9-PZ-kHT" collectionClass="NSMutableArray" id="PpF-bb-FE3"/>
+                        <outletCollection property="strongPassIndicatorsViews" destination="rse-3n-aah" collectionClass="NSMutableArray" id="du5-zO-d0f"/>
+                        <outletCollection property="strongPassIndicatorsViews" destination="RIp-GH-Sjt" collectionClass="NSMutableArray" id="YYG-sQ-RTO"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="avy-Zm-hWt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1211.1627906976744" y="95.278969957081557"/>
         </scene>
         <!--App-->
         <scene sceneID="zer-zr-9oM">
             <objects>
                 <viewController id="1Z6-ba-zdR" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="l3W-Ph-zXS">
-                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                        <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="3436_maldives-birds-eye-view-ocean_1170x2532" translatesAutoresizingMaskIntoConstraints="NO" id="X4w-Wu-Ra1">
+                                <rect key="frame" x="-110" y="-23" width="678" height="995"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="Do5-yU-LHP"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
@@ -38,16 +298,19 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4EP-n0-TAu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="458" y="-516"/>
+            <point key="canvasLocation" x="413.55140186915884" y="-704.31965442764579"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="3Tk-aO-0cw">
             <objects>
-                <tabBarController id="Wlf-C5-hVz" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="TabBarController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Wlf-C5-hVz" customClass="TabBarController" customModule="MySignInSignUpApp" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="pGw-LB-KX7">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="barTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="selectedImageTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
                         <segue destination="1Z6-ba-zdR" kind="relationship" relationship="viewControllers" id="w7p-lq-5xg"/>
@@ -56,14 +319,29 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VZV-Lg-X38" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-422" y="-213"/>
+            <point key="canvasLocation" x="-984" y="-231"/>
         </scene>
     </scenes>
     <resources>
-        <image name="gear" catalog="system" width="128" height="119"/>
-        <image name="person.circle" catalog="system" width="128" height="121"/>
+        <image name="3436_maldives-birds-eye-view-ocean_1170x2532" width="1170" height="2532"/>
+        <image name="3446_maldives-underwater-reef_1170x2532" width="1170" height="2532"/>
+        <image name="3453_underwater-ocean-maldives_1170x2532" width="1170" height="2532"/>
+        <image name="gear" catalog="system" width="128" height="122"/>
+        <image name="person.circle" catalog="system" width="128" height="123"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
