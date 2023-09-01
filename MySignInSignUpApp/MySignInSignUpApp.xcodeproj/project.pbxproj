@@ -16,6 +16,11 @@
 		399DB0672A95852900EA7481 /* SignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 399DB0662A95852900EA7481 /* SignInVC.swift */; };
 		39C809DF2A958FA0002BAECF /* CreateAccountVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39C809DE2A958FA0002BAECF /* CreateAccountVC.swift */; };
 		F49E27BC2A9D7D710071827D /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F49E27BB2A9D7D710071827D /* UserModel.swift */; };
+		F49E5E8C2A9F69E200E7BE60 /* UserDefaultsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F49E5E8B2A9F69E200E7BE60 /* UserDefaultsService.swift */; };
+		F49E5E8E2A9F6B1200E7BE60 /* UserDefaultsExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = F49E5E8D2A9F6B1200E7BE60 /* UserDefaultsExt.swift */; };
+		F49E5E902A9F76F500E7BE60 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F49E5E8F2A9F76F500E7BE60 /* TabBarController.swift */; };
+		F49E5E922A9F813800E7BE60 /* SettingsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F49E5E912A9F813800E7BE60 /* SettingsVC.swift */; };
+		F49E5E942A9FA01D00E7BE60 /* MainSettingsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F49E5E932A9FA01D00E7BE60 /* MainSettingsVC.swift */; };
 		F49FA8D72A9D820600F9705F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F49FA8D62A9D820600F9705F /* Assets.xcassets */; };
 		F49FA8D92A9D885900F9705F /* VerificationsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F49FA8D82A9D885900F9705F /* VerificationsVC.swift */; };
 		F4C69B482A9E0D5C0087D576 /* WelcomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C69B472A9E0D5C0087D576 /* WelcomeVC.swift */; };
@@ -35,6 +40,11 @@
 		399DB0662A95852900EA7481 /* SignInVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInVC.swift; sourceTree = "<group>"; };
 		39C809DE2A958FA0002BAECF /* CreateAccountVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountVC.swift; sourceTree = "<group>"; };
 		F49E27BB2A9D7D710071827D /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		F49E5E8B2A9F69E200E7BE60 /* UserDefaultsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsService.swift; sourceTree = "<group>"; };
+		F49E5E8D2A9F6B1200E7BE60 /* UserDefaultsExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsExt.swift; sourceTree = "<group>"; };
+		F49E5E8F2A9F76F500E7BE60 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		F49E5E912A9F813800E7BE60 /* SettingsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsVC.swift; sourceTree = "<group>"; };
+		F49E5E932A9FA01D00E7BE60 /* MainSettingsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainSettingsVC.swift; sourceTree = "<group>"; };
 		F49FA8D62A9D820600F9705F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F49FA8D82A9D885900F9705F /* VerificationsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerificationsVC.swift; sourceTree = "<group>"; };
 		F4C69B472A9E0D5C0087D576 /* WelcomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeVC.swift; sourceTree = "<group>"; };
@@ -111,6 +121,9 @@
 				39C809DE2A958FA0002BAECF /* CreateAccountVC.swift */,
 				F49FA8D82A9D885900F9705F /* VerificationsVC.swift */,
 				F4C69B472A9E0D5C0087D576 /* WelcomeVC.swift */,
+				F49E5E8F2A9F76F500E7BE60 /* TabBarController.swift */,
+				F49E5E912A9F813800E7BE60 /* SettingsVC.swift */,
+				F49E5E932A9FA01D00E7BE60 /* MainSettingsVC.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -127,6 +140,7 @@
 			isa = PBXGroup;
 			children = (
 				F4CEB3BD2A9D58A900865E01 /* UIViewControllerExt.swift */,
+				F49E5E8D2A9F6B1200E7BE60 /* UserDefaultsExt.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -135,6 +149,7 @@
 			isa = PBXGroup;
 			children = (
 				F4CEB3C02A9D614200865E01 /* VerificationService.swift */,
+				F49E5E8B2A9F69E200E7BE60 /* UserDefaultsService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -212,13 +227,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F49E5E922A9F813800E7BE60 /* SettingsVC.swift in Sources */,
 				F4CEB3BE2A9D58A900865E01 /* UIViewControllerExt.swift in Sources */,
 				F49E27BC2A9D7D710071827D /* UserModel.swift in Sources */,
+				F49E5E8C2A9F69E200E7BE60 /* UserDefaultsService.swift in Sources */,
+				F49E5E942A9FA01D00E7BE60 /* MainSettingsVC.swift in Sources */,
 				399DB04B2A956DBB00EA7481 /* AppDelegate.swift in Sources */,
+				F49E5E8E2A9F6B1200E7BE60 /* UserDefaultsExt.swift in Sources */,
 				F4CEB3C12A9D614200865E01 /* VerificationService.swift in Sources */,
 				399DB04D2A956DBB00EA7481 /* SceneDelegate.swift in Sources */,
 				39C809DF2A958FA0002BAECF /* CreateAccountVC.swift in Sources */,
 				F4C69B482A9E0D5C0087D576 /* WelcomeVC.swift in Sources */,
+				F49E5E902A9F76F500E7BE60 /* TabBarController.swift in Sources */,
 				399DB0672A95852900EA7481 /* SignInVC.swift in Sources */,
 				F49FA8D92A9D885900F9705F /* VerificationsVC.swift in Sources */,
 			);
@@ -369,7 +389,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 5K934XHGX4;
+				DEVELOPMENT_TEAM = 94FVSLY3WZ;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = MySignInSignUpApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -398,7 +418,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 5K934XHGX4;
+				DEVELOPMENT_TEAM = 94FVSLY3WZ;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = MySignInSignUpApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;

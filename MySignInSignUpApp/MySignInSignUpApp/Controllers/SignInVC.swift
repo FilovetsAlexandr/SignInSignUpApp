@@ -7,28 +7,48 @@
 
 import UIKit
 
-class SignInVC: UIViewController {
-    @IBOutlet weak var emailTF: UITextField!
-    @IBOutlet weak var passTF: UITextField!
-    @IBOutlet weak var errorLbl: UILabel!
-    @IBOutlet weak var signInBtn: UIButton!
+class SignInVC: BaseViewController {
+    @IBOutlet var emailTF: UITextField!
+    @IBOutlet var passTF: UITextField!
+    @IBOutlet var errorLbl: UILabel!
+    @IBOutlet var signInBtn: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         setupUI()
+        hideKeyboardWhenTappedAround()
+        dismissKeyboard()
+        // в идеале надо в UserDefaults записать булевое значение залогирован ли юзер
+        if let _ = UserDefaultsService.getUserModel() { goToBarController() }
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        emailTF.text = ""
+        passTF.text = ""
+    }
+    
+    @IBAction func signInAction() {
+        errorLbl.isHidden = true
+        guard let email = emailTF.text,
+              let pass = passTF.text,
+              let userModel = UserDefaultsService.getUserModel(),
+              email == userModel.email,
+              pass == userModel.pass
+        else {
+            errorLbl.isHidden = false
+            return
+        }
+        goToBarController()
+    }
+    
     private func setupUI() {
-        signInBtn.isEnabled = false
+        //       signInBtn.isEnabled = false
         errorLbl.isHidden = true
     }
-    /*
-     // MARK: - Navigation
-     
-     // In a storyboard-based application, you will often want to do a little preparation before navigation
-     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-     // Get the new view controller using segue.destination.
-     // Pass the selected object to the new view controller.
-     }
-     */
     
+    private func goToBarController() {
+        let storyboard = UIStoryboard(name: "MainStoryboard", bundle: nil)
+        guard let vc = storyboard.instantiateViewController(withIdentifier: "TabBarController") as? TabBarController else { return }
+        navigationController?.pushViewController(vc, animated: true)
+    }
 }

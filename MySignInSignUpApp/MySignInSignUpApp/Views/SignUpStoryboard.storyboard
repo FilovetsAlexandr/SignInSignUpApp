@@ -170,11 +170,6 @@
                                                     </stackView>
                                                 </subviews>
                                             </stackView>
-                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Jiu-8H-y9a">
-                                                <rect key="frame" x="95" y="381" width="240" height="1"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                            </view>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
@@ -241,22 +236,22 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="26" translatesAutoresizingMaskIntoConstraints="NO" id="PBZ-xZ-X1j">
-                                <rect key="frame" x="30" y="74" width="370" height="400"/>
+                                <rect key="frame" x="25" y="100" width="380" height="400"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please enter secret code from your email" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CpB-QH-vG4">
-                                        <rect key="frame" x="0.0" y="0.0" width="370" height="209.66666666666666"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="380" height="209.66666666666666"/>
                                         <fontDescription key="fontDescription" name="Zapfino" family="Zapfino" pointSize="31"/>
                                         <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m5U-d2-dXJ">
-                                        <rect key="frame" x="0.0" y="235.66666666666666" width="370" height="57.666666666666657"/>
+                                        <rect key="frame" x="0.0" y="235.66666666666666" width="380" height="57.666666666666657"/>
                                         <fontDescription key="fontDescription" name="Zapfino" family="Zapfino" pointSize="17"/>
                                         <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter secret code" textAlignment="center" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="4qn-mR-gKV">
-                                        <rect key="frame" x="0.0" y="319.33333333333331" width="370" height="80.666666666666686"/>
+                                        <rect key="frame" x="0.0" y="319.33333333333331" width="380" height="80.666666666666686"/>
                                         <fontDescription key="fontDescription" name="Zapfino" family="Zapfino" pointSize="21"/>
                                         <textInputTraits key="textInputTraits"/>
                                         <connections>
@@ -264,7 +259,7 @@
                                         </connections>
                                     </textField>
                                     <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Error: Invalid email" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PtT-QY-pyz">
-                                        <rect key="frame" x="0.0" y="400" width="370" height="0.0"/>
+                                        <rect key="frame" x="0.0" y="400" width="380" height="0.0"/>
                                         <fontDescription key="fontDescription" name="Zapfino" family="Zapfino" pointSize="19"/>
                                         <color key="textColor" systemColor="systemRedColor"/>
                                         <nil key="highlightedColor"/>
@@ -275,14 +270,13 @@
                         <viewLayoutGuide key="safeArea" id="qR0-jb-x1M"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="PBZ-xZ-X1j" firstAttribute="centerY" secondItem="qR0-jb-x1M" secondAttribute="centerY" constant="-187" id="3eZ-Ts-oIL"/>
-                            <constraint firstItem="qR0-jb-x1M" firstAttribute="trailing" secondItem="PBZ-xZ-X1j" secondAttribute="trailing" constant="30" id="S97-en-i1s"/>
-                            <constraint firstItem="PBZ-xZ-X1j" firstAttribute="centerX" secondItem="qR0-jb-x1M" secondAttribute="centerX" id="TPZ-2Z-yCz"/>
+                            <constraint firstItem="PBZ-xZ-X1j" firstAttribute="leading" secondItem="qR0-jb-x1M" secondAttribute="leading" constant="25" id="48N-Cz-mYj"/>
+                            <constraint firstItem="PBZ-xZ-X1j" firstAttribute="top" secondItem="qR0-jb-x1M" secondAttribute="top" constant="100" id="6C2-d4-Ruu"/>
+                            <constraint firstItem="qR0-jb-x1M" firstAttribute="trailing" secondItem="PBZ-xZ-X1j" secondAttribute="trailing" constant="25" id="BOF-vB-Yke"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="6Je-RD-zR4"/>
                     <connections>
-                        <outlet property="centerYConstraint" destination="3eZ-Ts-oIL" id="GiP-bU-8hI"/>
                         <outlet property="codeTF" destination="4qn-mR-gKV" id="BEA-vq-nn3"/>
                         <outlet property="errorCodeLbl" destination="PtT-QY-pyz" id="OGu-5y-Knl"/>
                         <outlet property="infoLbl" destination="m5U-d2-dXJ" id="Gdg-Ob-yvr"/>
@@ -305,21 +299,10 @@
                                 <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DIJ-Dq-aiK">
-                                <rect key="frame" x="96.666666666666686" y="689.66666666666663" width="237" height="232.33333333333337"/>
-                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Continue">
-                                    <fontDescription key="titleFontDescription" name="Zapfino" family="Zapfino" pointSize="40"/>
-                                </buttonConfiguration>
-                                <connections>
-                                    <action selector="continueAction" destination="YNF-xx-tTV" eventType="touchUpInside" id="YQr-1g-zgi"/>
-                                </connections>
-                            </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="9Wj-fy-Ang">
-                                <rect key="frame" x="25" y="98.999999999999972" width="380" height="351.33333333333326"/>
+                                <rect key="frame" x="25" y="99.000000000000028" width="380" height="500.66666666666674"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qhk-O4-iOJ">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qhk-O4-iOJ">
                                         <rect key="frame" x="0.0" y="0.0" width="380" height="199.33333333333334"/>
                                         <fontDescription key="fontDescription" name="Zapfino" family="Zapfino" pointSize="59"/>
                                         <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -331,6 +314,17 @@
                                         <color key="textColor" systemColor="systemGroupedBackgroundColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DIJ-Dq-aiK">
+                                        <rect key="frame" x="0.0" y="351.33333333333331" width="380" height="149.33333333333331"/>
+                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Continue">
+                                            <fontDescription key="titleFontDescription" name="Zapfino" family="Zapfino" pointSize="40"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="continueAction" destination="YNF-xx-tTV" eventType="touchUpInside" id="YQr-1g-zgi"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                             </stackView>
                         </subviews>
@@ -339,10 +333,7 @@
                         <constraints>
                             <constraint firstItem="9Wj-fy-Ang" firstAttribute="top" secondItem="Ess-z9-B2O" secondAttribute="top" constant="99" id="0wm-FL-67i"/>
                             <constraint firstItem="9Wj-fy-Ang" firstAttribute="leading" secondItem="Ess-z9-B2O" secondAttribute="leading" constant="25" id="GBN-kS-Si8"/>
-                            <constraint firstItem="DIJ-Dq-aiK" firstAttribute="top" secondItem="Ess-z9-B2O" secondAttribute="top" constant="689.66666666666663" id="OGy-mQ-N5Y"/>
                             <constraint firstItem="Ess-z9-B2O" firstAttribute="trailing" secondItem="9Wj-fy-Ang" secondAttribute="trailing" constant="25" id="SVv-XJ-m7d"/>
-                            <constraint firstItem="DIJ-Dq-aiK" firstAttribute="centerX" secondItem="Ess-z9-B2O" secondAttribute="centerX" id="dK0-Zq-zMy"/>
-                            <constraint firstItem="DIJ-Dq-aiK" firstAttribute="bottom" secondItem="Ess-z9-B2O" secondAttribute="bottom" id="oFc-QO-HgS"/>
                             <constraint firstItem="9Wj-fy-Ang" firstAttribute="centerX" secondItem="Ess-z9-B2O" secondAttribute="centerX" id="vQb-s7-Kwx"/>
                         </constraints>
                     </view>

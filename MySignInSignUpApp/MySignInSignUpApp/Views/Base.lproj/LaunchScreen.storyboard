@@ -22,17 +22,17 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SignIn SignUp App" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V9O-fM-eMV">
-                                <rect key="frame" x="115.66666666666667" y="54.666666666666686" width="198.66666666666663" height="436"/>
+                                <rect key="frame" x="115.66666666666667" y="260.66666666666669" width="198.66666666666663" height="436.00000000000006"/>
                                 <fontDescription key="fontDescription" name="Zapfino" family="Zapfino" pointSize="43"/>
-                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="V9O-fM-eMV" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" constant="-206" id="1pZ-LP-qNH"/>
-                            <constraint firstItem="V9O-fM-eMV" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Rkb-EE-Px6"/>
+                            <constraint firstItem="V9O-fM-eMV" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="K8Y-xF-gnX"/>
+                            <constraint firstItem="V9O-fM-eMV" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="ZS0-AX-0R2"/>
                         </constraints>
                     </view>
                 </viewController>

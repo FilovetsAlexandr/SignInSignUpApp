@@ -36,6 +36,7 @@ class CreateAccountVC: BaseViewController {
                strongPassIndicatorsViews.forEach { view in view.alpha = 0.2 }
                hideKeyboardWhenTappedAround()
                startKeyboardObserver()
+               navigationController?.navigationBar.isHidden = true
     }
     
     @IBAction func emailTFAction(_ sender: UITextField) {

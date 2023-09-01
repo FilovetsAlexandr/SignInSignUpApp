@@ -8,19 +8,21 @@
 import UIKit
 
 class WelcomeVC: UIViewController {
-    
-    @IBOutlet weak var infoLbl: UILabel!
+    @IBOutlet var infoLbl: UILabel!
     
     var userModel: UserModel?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         setupUI()
+        navigationController?.navigationBar.isHidden = true
     }
     
-    // TODO: SAVE DATA
-    @IBAction func continueAction() { navigationController?.popToRootViewController(animated: true) }
+    @IBAction func continueAction() {
+        guard let userModel = userModel else { return }
+        UserDefaultsService.saveUserModel(userModel: userModel)
+        navigationController?.popToRootViewController(animated: true)
+    }
     
     private func setupUI() { infoLbl.text = "\(userModel?.name ?? "") " }
-
 }
